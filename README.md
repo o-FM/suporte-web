@@ -6,4 +6,4 @@ Configurei o ambiente de desenvolvimento, criando meu package.json e baixando mi
 
 2° dia
 
-Criar banco de dados...
+Configurando typeORM, criando migrations, 
