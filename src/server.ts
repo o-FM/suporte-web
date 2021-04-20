@@ -6,7 +6,7 @@ const server = express()
 
 server.get('/', (request, response) => {
     return response.json({
-        menssage: "Olá NLW #5"
+        menssage: "Bem vindos Usuários"
     })
 })
 
