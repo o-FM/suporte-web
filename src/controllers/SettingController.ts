@@ -23,6 +23,24 @@ class SettingsController {
 
     }
 
+    async showBySttings(request: Request, response: Response) {
+
+        const{ id } = request.params
+
+        const settingsService = new SettingsService()
+
+        try {
+            const list = await settingsService.listBySettings(id)
+
+            return response.json(list)
+        } catch (error) {
+            return response.status(400).json({
+                message: error.message
+            })
+        }
+
+    }
+
 }
 
 export { SettingsController }
