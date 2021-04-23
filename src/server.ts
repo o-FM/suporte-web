@@ -1,13 +1,6 @@
-import express, { request, response } from 'express'
-import './database'
-import { routes } from "./routes";
+import { http } from "./http";
+import './websocket/client'
 
-const port = 3000
-const server = express()
+const port = 3000 
 
-server.use(express.urlencoded({ extended: true }))
-server.use(express.json())
-
-server.use(routes)
- 
-server.listen(port, () => console.log(`BACK-END Server is running on port ${port}`))
+http.listen(port, () => console.log(`BACK-END Server is running on port ${port}`))

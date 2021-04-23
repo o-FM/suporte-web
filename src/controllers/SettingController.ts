@@ -23,6 +23,7 @@ class SettingsController {
 
     }
 
+    // Lista nossos settings...
     async showBySttings(request: Request, response: Response) {
 
         const{ id } = request.params
