@@ -21,25 +21,17 @@ class ConnectionService {
 
     async create({socket_id, user_id, admin_id, id}: IConnectionCreate) {
 
-        try {
-            const connection = this.connectionRepository.create({
-                socket_id,
-                user_id,
-                admin_id,
-                id
-            })
-    
-            await this.connectionRepository.save(connection)
-    
-            return connection
+        const connection = this.connectionRepository.create({
+            socket_id,
+            user_id,
+            admin_id,
+            id
+        })
 
-        } catch (error) {
+        await this.connectionRepository.save(connection)
 
-            return response.status(400).json({
-                message: error.menssage
-            })
+        return connection 
             
-        }
     }
 
 }
