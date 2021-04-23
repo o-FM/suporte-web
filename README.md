@@ -1,9 +1,3 @@
 # suporte-web
 
-1° dia 
-
-Configurei o ambiente de desenvolvimento, criando meu package.json e baixando minhas dependências. Criei meu server.ts e as primeiras rotas GET e POST.
-
-2° dia
-
-Configurando typeORM, criando migrations, 
+Ferramente para atendimento ao cliente em tempo real utilizando WebSocket, esta ferramenta tem como principal intuito garantir um melhor atendimento ao cliente, levando qualidade, agilidade e satisfação ao usuário.
