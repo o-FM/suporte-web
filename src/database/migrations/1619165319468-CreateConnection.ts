@@ -49,7 +49,7 @@ export class CreateConnection1619165319468 implements MigrationInterface {
                 foreignKeys:[
                     {
                         name: "FKConnectionUser",
-                        referencedTableName: "user",
+                        referencedTableName: "users",
                         referencedColumnNames: ["id"],
                         columnNames: ["user_id"],
                         onDelete: "SET NULL",
